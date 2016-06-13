@@ -12,7 +12,7 @@
     <modules>
         <module>api</module>
         <module>ejb</module>
+        <module>ear</module>
         <module>client</module>
-        <module>test</module>
     </modules>
 </project>
