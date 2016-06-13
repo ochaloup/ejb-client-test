@@ -1,0 +1,8 @@
+= Simple client
+
+EJB client for jboss eap
+
+Initialy this should be a simple reproducer for leaking client connections but I'm not able to find out where the leak happens
+in my test code of txn testsuite (could be a test issue).
+
+This simple try works well.
