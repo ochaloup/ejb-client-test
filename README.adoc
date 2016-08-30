@@ -6,3 +6,14 @@ Initialy this should be a simple reproducer for leaking client connections but I
 in my test code of txn testsuite (could be a test issue).
 
 This simple try works well.
+
+
+== HOW TO
+
+`mvn package` will package the ear and client jar. Then you need to deploy and run client
+
+```
+cp ear/target/ejb-client-connection-leak-ear-1.0.0-SNAPSHOT.ear ~/jboss/jboss-eap-last/standalone/deployments/
+java -cp client/target/ejb-client-connection-leak-client-1.0-SNAPSHOT.jar:api/target/api.jar:/home/ochaloup/jboss/jboss-eap-last/bin/client/jboss-client.jar:/ org.jboss.qe.ClientMain
+<press ENTER>
+```
