@@ -17,3 +17,11 @@ cp ear/target/ejb-client-connection-leak-ear-1.0.0-SNAPSHOT.ear ~/jboss/jboss-ea
 java -cp client/target/ejb-client-connection-leak-client-1.0-SNAPSHOT.jar:api/target/api.jar:/home/ochaloup/jboss/jboss-eap-last/bin/client/jboss-client.jar:/ org.jboss.qe.ClientMain
 <press ENTER>
 ```
+
+or with JBOSS_HOME
+
+```
+cp ear/target/ejb-client-connection-leak-ear-1.0.0-SNAPSHOT.ear $JBOSS_HOME/standalone/deployments/
+java -cp client/target/ejb-client-connection-leak-client-1.0-SNAPSHOT.jar:api/target/api.jar:$JBOSS_HOME/bin/client/jboss-client.jar:. org.jboss.qe.ClientMain
+<press ENTER>
+```
